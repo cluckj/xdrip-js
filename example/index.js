@@ -18,7 +18,8 @@ io.on('connection', (socket) => {
 
 const Transmitter = require('..');
 
-const id = process.argv[2];
-const transmitter = new Transmitter(id);
+//const id = process.argv[2];
+//const transmitter = new Transmitter(id);
+const transmitter = new Transmitter();
 
 require('./transmitterIO')(io, transmitter);
